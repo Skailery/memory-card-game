@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>English in the kitchen</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+ 
+
+
+    <!-- Страница с игрой.
+    Здесь расположены карточки. -->
+    <body>
+      <div class='finish'>
+        <a class='button-ready' href='finish.html'>Ready</a>
+        
+        </div>
+      
+      <section class='game'>
+
+
+        <!-- В игре 16 карточек. 
+          Каждая из карточек состоит из контейнера div c классом .food-card, внутри которого находятся два элемента img. 
+          Первая картинка отвечает за лицо (front), вторая за обратную часть - обложку (back).
+          Data-frame содержит название объекта, который изображен на картинке.
+
+          Для одного объекта в игре требуется 2 карточки: в одном находится картинка с его изображением, 
+          в другом - картинка с названием объекта.
+          
+          Изменение карточек:
+
+          1) Чтобы поменять объект, сначала дайте ему название, например, apple juice, и поместите его в атрибут data-frame (в обоих div классах для 1 карточки).
+
+          2) Для того чтобы менять изображения, замените картинку в src. 
+          
+          - В первом div классе в src для front добавьте нужное изображение.
+          - Во втором div классе в src для front добавьте картину с названием объекта.
+          - Если вам нужно поменять обложку карточек, то в src для back добавьте нужное изображение (в обоих div классах для ВСЕХ карточек).
+          -->
+
+
+
+        <!-- Карточки apple juice  -->
+        <div class='food-card' data-frame='apple juice'>
+          <img class='front' src='img/food/apple-juice.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='apple juice'>
+          <img class='front' src='img/word/apple.juice.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки bread -->
+        <div class='food-card' data-frame='bread'>
+          <img class='front' src='img/food/bread.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='bread'>
+          <img class='front' src='img/word/bread.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки cabbage -->
+        <div class='food-card' data-frame='cabbage'>
+          <img class='front' src='img/food/cabbage.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='cabbage'>
+          <img class='front' src='img/word/cabbage.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки carrot -->
+        <div class='food-card' data-frame='carrot'>
+          <img class='front' src='img/food/carrot.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='carrot'>
+          <img class='front' src='img/word/carrot.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки cheese -->
+        <div class='food-card' data-frame='cheese'>
+          <img class='front' src='img/food/cheese.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='cheese'>
+          <img class='front' src='img/word/cheese.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки eggs -->
+        <div class='food-card' data-frame='eggs'>
+          <img class='front' src='img/food/eggs.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='eggs'>
+          <img class='front' src='img/word/eggs.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки meat -->
+        <div class='food-card' data-frame='meat'>
+          <img class='front' src='img/food/meat.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='meat'>
+          <img class='front' src='img/word/meat.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+
+        <!-- Карточки milk -->
+        <div class='food-card' data-frame='milk'>
+          <img class='front' src='img/food/milk.svg'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+        <div class='food-card' data-frame='milk'>
+          <img class='front' src='img/word/milk.word.png'/>
+          <img class='back' src='img/chef.icon.svg'/>
+        </div>
+      
+      </section>
+    
+      <script src='script.js'></script>
+    </body>
+</html>
+
+
+
